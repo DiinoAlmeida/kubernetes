@@ -5,7 +5,6 @@ metadata:
   labels:
     app: pacman
   name: pacman
-  resourceVersion: "5206"
   uid: 018f436b-b150-455c-b633-6141b38ea0bc
 spec:
   clusterIP: 10.102.201.73
