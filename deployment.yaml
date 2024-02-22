@@ -10,7 +10,6 @@ metadata:
   labels:
     app: pacman
   name: pacman
-  namespace: pacman
   resourceVersion: "26311"
   uid: e7bf6912-24d8-4969-ad35-7436070d892f
 spec:

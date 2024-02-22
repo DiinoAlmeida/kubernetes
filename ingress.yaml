@@ -7,7 +7,6 @@ metadata:
   creationTimestamp: "2024-02-21T11:41:18Z"
   generation: 1
   name: pacman
-  namespace: pacman
   resourceVersion: "24698"
   uid: 943b3de2-f790-4e1e-a4dc-ab3c5e3e6bb7
 spec:
