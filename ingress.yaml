@@ -1,27 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"networking.k8s.io/v1","kind":"Ingress","metadata":{"annotations":{},"name":"pacman","namespace":"pacman"},"spec":{"rules":[{"host":"pacman.local","http":{"paths":[{"backend":{"service":{"name":"pacman","port":{"number":80}}},"path":"/","pathType":"Prefix"}]}}]}}
-  creationTimestamp: "2024-02-21T11:41:18Z"
-  generation: 1
   name: pacman
-  uid: 943b3de2-f790-4e1e-a4dc-ab3c5e3e6bb7
 spec:
   ingressClassName: nginx
   rules:
   - host: pacman.local
     http:
       paths:
-      - backend:
+      - path: /
+        pathType: Prefix
+        backend:
           service:
             name: pacman
             port:
               number: 80
-        path: /
-        pathType: Prefix
-status:
-  loadBalancer:
-    ingress:
-    - ip: 192.168.49.2
